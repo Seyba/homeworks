@@ -1,7 +1,7 @@
 //* ========== Week3 Day2 Homework ======================
 // creating classes
 /*
-    give the class at least 3 properties
+give the class at least 3 properties
 give the class at least 3 methods
 create two instances of the class (two cats)
 log both instances to see their properties
@@ -40,13 +40,15 @@ milo.bio()
 milo.jump()
 milo.groom()
 
+console.log('==========================================')
+
 // create 3 properties that are set by the constructor
 // create 3 methods
 // instantiate 2 arrays of 3 pirates, 
 // name the arrays after your favorite pirate ships, 
 // jollyRoger and blackPearl
 // loop over each array and print 3 properties of each pirate
-console.log('==========================================')
+
 class Pirate {
     constructor(name, capacity, motor){
         this.name = name
@@ -62,18 +64,28 @@ class Pirate {
        console.log(`${this.name} is sailing.`) 
     }
     stopSailing(){
-        this.sailing = false
+        //this.sailing = false
         console.log(`${this.name} stops sailing.`)
     }
 }
 
-const pirateOne  = new Pirate('jollyRoger', 1000, '2 engines')
-const pirateTwo = new Pirate('blackPearl', 600, '1 engine' )
+const pirateOne  = new Pirate('freedom', 1000, '2 engines')
+const pirateTwo = new Pirate('Jack', 600, '1 engine' )
 const pirateThree = new Pirate('Liberty', 2000, '4 engines' )
-const pirateArray = [pirateOne, pirateTwo, pirateThree]
 
-for(let i = 0; i < arr1.length; i++){
-    console.log(pirateArray[i].name)
-    console.log(pirateArray[i].sail)
-    console.log(pirateArray[i].motor)
+const blackPearl = []
+blackPearl.push([pirateOne, pirateTwo, pirateThree])
+
+// for(let i = 0; i<blackPearl.length; i++) {
+//     for(const properties in blackPearl) {
+//         console.log(blackPearl[i])
+//     }
+// }
+const jollyRoger = [pirateOne, pirateTwo, pirateThree]
+
+for(let i = 0; i < jollyRoger.length; i++){
+    console.log(jollyRoger[i].name)
+    console.log(jollyRoger[i].capacity)
+    console.log(jollyRoger[i].motor)
+    
 }
