@@ -1,4 +1,12 @@
 //* ========== Week3 Day2 Homework ======================
+
+//* Notice this file is not
+//* associated with any html file,
+//* it's pure command line. To check 
+//* node index.js to see the result in 
+//* the command console.log
+
+
 // creating classes
 /*
 give the class at least 3 properties
